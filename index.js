@@ -96,7 +96,6 @@ const self = {
     do {
       let new_results = await self.parseResults();
       results = [...results, ...new_results];
-
       if (results.length < number) {
         await self.page.waitForSelector(
           'nav[class*="font-bold"] > ul > li > span[class*="next"] > a',
@@ -131,7 +130,6 @@ const self = {
     do {
       let new_results = await self.parseResults();
       results = [...results, ...new_results];
-
       if (results.length < number) {
         await self.page.waitForSelector(
           'nav[class*="font-bold"] > ul > li > span[class*="next"] > a',
@@ -157,7 +155,7 @@ const self = {
   },
   parseResults: async () => {
     let elements = await self.page.$$(
-      '.js-collection-official-documents > div[class*="row"] > div[class*="col-md-6"]'
+      '.js-official-documents-search-results > div[class*="row"] > div[class*="col-md-6"]'
     );
 
     let results = [];
