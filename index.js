@@ -52,8 +52,11 @@ async function loadUrl(page, url, browser) {
         ".ediciones_texto p:nth-of-type(2)"
       ).innerHTML;
       obj.image = element.querySelector(".ediciones_pdf img").src;
-      obj.download = element.querySelector(
+      /*obj.download = element.querySelector(
         ".ediciones_botones ul li a:first-child"
+      ).href;*/
+      obj.download = element.querySelector(
+        ".ediciones_botones ul li input[data-url]"
       ).href;
       books.push(obj);
     }
