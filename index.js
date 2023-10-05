@@ -57,7 +57,7 @@ async function loadUrl(page, url, browser) {
       ).href;*/
       obj.download = element.querySelector(
         ".ediciones_botones ul li input[data-url]"
-      ).href;
+      ).getAttribute('data-url');
       books.push(obj);
     }
 
