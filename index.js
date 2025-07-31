@@ -72,10 +72,12 @@ async function loadUrl(page, url, browser) {
 /*OPINIONES OSCE*/
 
 const OSCE_URL = (page) =>
-  `https://www.gob.pe/institucion/osce/colecciones/713-opiniones-de-la-direccion-tecnico-normativa`;
+  //`https://www.gob.pe/institucion/osce/colecciones/713-opiniones-de-la-direccion-tecnico-normativa`;
+  `https://www.gob.pe/institucion/oece/colecciones/66839-opiniones-de-la-direccion-tecnico-normativa-oece`;
 
 const OSCE_RESOLUTIONS_URL = (page) =>
-  `https://www.gob.pe/institucion/osce/colecciones/716-resoluciones-del-tribunal-de-contrataciones-del-estado`;
+  //`https://www.gob.pe/institucion/osce/colecciones/716-resoluciones-del-tribunal-de-contrataciones-del-estado`;
+  `https://www.gob.pe/institucion/oece/colecciones/68030`;
 
 const self = {
   browser: null,
